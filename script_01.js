@@ -41,7 +41,7 @@ let person =    {
                         sayHello:
                                 function()
                                 {
-                                    return "Hallo ich bin " + person.firstName;    
+                                    return "Hallo ich bin " + this.firstName;    
                                 }
 
                 };
