@@ -30,39 +30,56 @@
 // }
 
 
-/***** Objekte 1 Daten/Funktionen *******/
+// /***** Objekte 1 Daten/Funktionen *******/
 
-let person =    {
+// let person =    {
 
-                        firstName: "Marinus",
-                        familyName: "Feeling",
-                        salary: [120000, 160000],
-                        permission: true,
-                        sayHello:
-                                function()
-                                {
-                                    return "Hallo ich bin " + this.firstName;    
+//                         firstName: "Marinus",
+//                         familyName: "Feeling",
+//                         salary: [120000, 160000],
+//                         permission: true,
+//                         sayHello:
+//                                 function()
+//                                 {
+//                                     return "Hallo ich bin " + this.firstName;    
+//                                 }
+
+//                 };
+
+
+// output(person);
+// output(person.familyName);
+// output(person.permission);
+// output(person.salary);
+
+// person.familyName = "Fehling";
+// output(person.sayHello());
+
+// const txt =     "Ich bin " + person.firstName + " " +
+//                 person.familyName +
+//                 " und verdiene " +
+//                 person.salary[1] + " p.a";
+
+
+// output(txt);
+
+/***** Objekte 2 Hierarchie *******/
+
+const baikal =  {
+
+                        value: "10m",
+                        deep:{
+                                deeper:{
+                                        deepest: "Das Licht - auf 1642m!"
                                 }
+                        }
+
 
                 };
 
-
-output(person);
-output(person.familyName);
-output(person.permission);
-output(person.salary);
-
-person.familyName = "Fehling";
-output(person.sayHello());
-
-const txt =     "Ich bin " + person.firstName + " " +
-                person.familyName +
-                " und verdiene " +
-                person.salary[1] + " p.a";
-
-
-output(txt);
-
+output(baikal);
+output(baikal.value);
+output(baikal.deep.deeper.deepest);
 
 
 /** Ausgabe */
